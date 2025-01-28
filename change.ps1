@@ -10,5 +10,4 @@ wevtutil cl "Microsoft-Windows-MpEventLog/Operational"
 wevtutil cl "Microsoft-Windows-Windows Defender/Antimalware"
 Remove-Item -Path "C:\ProgramData\Microsoft\Windows Defender\Scans\History\*" -Recurse -Force
 Remove-Item -Path "C:\ProgramData\Microsoft\Windows Defender\*" -Recurse -Force
-Enable-NetAdapter -Name "Wi-Fi" -Confirm:$false
 Restart-Computer -Force
